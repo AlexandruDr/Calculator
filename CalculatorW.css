@@ -1,0 +1,42 @@
+.button1 {
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 1px solid black;  
+}
+
+.button1:hover{
+    background-color: #32BA9B;
+    color: white;
+    border : 0;
+}
+
+#pushLeft {
+    float: left;
+}
+
+.margin {
+    margin : 15px 15px;
+    margin-left : 0px;
+}
+
+#userOutput {
+    
+    color: black;
+    
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   
+    border: 1px solid black;
+    padding: 15px;
+}

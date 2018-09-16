@@ -186,7 +186,7 @@ function clear ()
 {
     var sel = document.getElementById("selData");
     sel.addEventListener("click", function () {
-        document.getElementById("userOutput").innerHTML = "";
+        document.getElementById("userOutput").innerHTML = "Your System's Power Output";
     } )
 }
 
