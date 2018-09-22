@@ -1,26 +1,97 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
       <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" type="text/css" href="CalculatorW.css">
+
     <title>Document</title>
-    
+
+   
+
 </head>
+
 <body>
-<div class="pushLeft">
-    
-<select id = "selData" class = "margin"></select>
-   <br>
-<button onclick="display()"; class = "button button1 margin";> Generate system size</button>
+
+   
+
+                <p> Find out how much you need to invest in solar panels to fully cover your monthly electricity bill </p>
+
+                <p> To do this, choose the state below and add your homes' daily electricity consumption (in kW) </p>
+
+                <p> <strong> If you don't input your daily average consumption (in kW) and/or insulation for the part of the state you are in, this calculator will use the average amount of electricity consumed per household in your state and the average insulation value for the state.</strong> </p>
+
+                <p> To reset the calculator, click on the Reset button </p>
+
+               
+
+                               
+
+    <select id="selData"></select>
+
+               
+
+ 
+
+    <input id="input" value="Average kW/day"; onfocus='if(this.value!=""){this.value="";}'; onchange="inputExtract()" ; ></input>
+
+                <input id="input1" value="Insulation"; onfocus='if(this.value!=""){this.value="";}'; onchange="inputExtract2()" ; ></input>
+
+ 
+
     <br>
-<div><output id = "userOutput" class = "margin";>Your System's Power Output</output> <div>    
-    </div>
-    
-    
+
+ 
+
+    <button onclick="display(); "> Generate system size</button>
+
+ 
+
+    <br>
+
+ 
+
+    <output id="userOutput">Your System's Needed Power Output</output>
+
+ 
+
+    <br>
+
+ 
+
+    <button id="reset" onclick="reset(); "> Reset </button>
+
+               
+
+                <br>
+
+               
+
+               
+
+                <img id ="ins" src = "insolationEurope.png"; alt="message"></img>;
+
+               
+
+ 
+
+   
+
 <script src ="CalculatorW.js"></script>
 
+ 
+
     </body>
+
 </html>
+
+ 
